@@ -1,4 +1,4 @@
-name: Your Workflow Name
+name: Catch OpenAI API key
 
 on:
   push:
