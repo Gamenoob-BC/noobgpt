@@ -2,7 +2,7 @@ import openai
 from decouple import config
 
 # Set your OpenAI API key
-api_key = config("KEY")
+api_key = config("APIKEY")
 openai.api_key = api_key
 
 def generate_response(prompt):
