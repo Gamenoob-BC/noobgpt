@@ -1,7 +1,8 @@
 import openai
+import os
 
 # Set your OpenAI API key
-api_key = "dummy"
+api_key = os.environ.get("APIKEY")
 openai.api_key = api_key
 
 def generate_response(prompt):
