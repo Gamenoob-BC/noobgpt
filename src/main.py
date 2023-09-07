@@ -1,8 +1,8 @@
 import openai
-import os
+from decouple import config
 
 # Set your OpenAI API key
-api_key = os.environ.get('APIKEY')
+api_key = config("KEY")
 openai.api_key = api_key
 
 def generate_response(prompt):
